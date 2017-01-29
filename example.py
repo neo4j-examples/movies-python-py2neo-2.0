@@ -7,7 +7,7 @@ from bottle import get, run, request, response, static_file
 from py2neo import Graph
 
 
-graph = Graph()
+graph = Graph("http://username:<password>@localhost:7474")
 
 
 @get("/")
